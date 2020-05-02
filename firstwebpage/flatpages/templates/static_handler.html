@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="{{ STATIC_URL }}/static/index.css">
 	</head>
 	<body>
+		{% load static %}
 		<h1>Привет, Мир!</h1>
 		<h2>Это учебный сайт, с его помощью будут изучены технологии python/django, html/css.</h2>
 		<h3>Как видите, здесь используются заголовки различных уровней.</h3>
@@ -96,6 +97,6 @@
 			</tr>
 		</table>
 		<p>И картинка:</p>
-		<img src="C:\D\personal\MTUCI\Sem2\WEB\Lab2\images\img1.jpg" alt="Картинка">
+		<img src="{% static 'img/s1200.jpg' %}" alt="Картинка">
 	</body>
 </html>
